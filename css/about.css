@@ -1,0 +1,23 @@
+header #about{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    margin: 30px 20px;
+    padding: 0px;
+    border: 15px solid rgb(30, 40, 40);
+    border-radius: 7px;
+}
+#aboutme{
+    background-color: palegoldenrod;
+    padding: 20px;
+}
+#images{
+    background-color: palegoldenrod;
+}
+#images img{
+    border: 1px solid rgb(30, 40, 40);
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-top: 6px;
+}

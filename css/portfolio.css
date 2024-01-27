@@ -1,0 +1,132 @@
+header #portfolio{
+    text-decoration: underline;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(30, 40, 40);
+    margin: 50px;
+    border-radius: 7px;
+    text-align: left;
+}
+.content h2{
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    width: 85%;
+}
+.content dl{
+    width: 85%;
+    padding: 0px;
+}
+.content a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: palegoldenrod;
+    margin: 15px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+.content a:hover{
+    transform: scale(1.02);
+}
+.content dt{
+    padding-left: 15px;
+}
+.content dd{
+    margin-right: 35px;
+}
+
+/*modal popup */
+
+.md-popup {
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+    z-index: 2000;
+	visibility: hidden;
+	transform: translateX(-50%) translateY(-50%);
+}
+.md-popup:target{
+    visibility: visible;
+}
+
+.md-overlay{
+    background-color: rgb(30, 40, 40);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.md-popup:target ~ .md-overlay{
+    opacity: 0.9;
+	visibility: visible;
+}
+.md-content{
+    background-color: palegoldenrod;
+    position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+.md-content > div {
+	padding: 15px 40px 30px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content .md-btns{
+	display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.md-content a{
+	font-size: 0.8em;
+    color: brown;
+}
+
+.md-popup .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-popup:target .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}

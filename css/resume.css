@@ -1,0 +1,30 @@
+header #resume{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    margin: 30px 20px;
+    justify-content: space-around;
+    
+}
+#lifeexperiences-box{
+    border: 15px solid rgb(30, 40, 40);
+    border-radius: 7px;
+    background-color: palegoldenrod;
+    padding: 10px;
+    margin: 10px;
+}
+#skills-box{
+    border: 15px solid rgb(30, 40, 40);
+    border-radius: 7px;
+    background-color: palegoldenrod;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+@media (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+}
